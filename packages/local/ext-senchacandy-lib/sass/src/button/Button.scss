@@ -1,0 +1,176 @@
+
+/* 
+ * back button small 
+ * default back button
+ */
+
+.x-btn-back-small {
+	position: relative;
+	padding-left: 12px;
+	overflow: hidden;
+	
+	.x-btn-wrap {
+		background: $btn-back-background-color;
+		position: absolute;
+
+		height: 20px;
+		min-width: 40px;
+		position: relative;
+		padding-left: 5px;
+
+		
+		&:hover .x-btn-button-center::before,
+		&:hover {
+		   background: $btn-back-background-color-over;
+		}
+
+		.x-btn-button-center::before {
+			content: '';
+			background: $btn-back-background-color;	
+			height: 19px;
+			width: 19px;
+			display: inline-block;
+			position: absolute;
+			left: -8px;
+			top: 0px;
+			-webkit-transform: rotate(45deg);
+			-webkit-mask-image: -webkit-gradient(linear, left bottom, right top, from(#000000), color-stop(0.5, #000000), color-stop(0.5, transparent), to(transparent));
+			-webkit-background-clip: content;
+		}
+
+		.x-btn-inner {
+			color: $btn-back-color;
+			overflow: initial;
+			font-size: 80%;
+			padding-right: 6px;
+		}
+
+	}
+}
+
+/* 
+ * forward button small 
+ */
+.x-btn-forward-small {
+	position: relative;
+	padding-right: 12px;
+	overflow: hidden;
+	
+	.x-btn-wrap {
+		background: $btn-back-background-color;
+		position: absolute;
+
+		height: 20px;
+		min-width: 40px;
+		position: relative;
+	
+		padding-right: 5px;
+
+		&:hover .x-btn-button-center::before,
+		&:hover {
+		   background: $btn-back-background-color-over;
+		}
+
+		.x-btn-button-center::before {
+			content: '';
+			background: $btn-back-background-color;
+			height: 19px;
+			width: 19px;
+			display: inline-block;
+			position: absolute;
+			right: -9px;
+			top: 0px;
+			-webkit-transform: rotate(45deg);
+			-webkit-mask-image: -webkit-gradient(linear, right top, left bottom, from(#000000), color-stop(0.5,#000000), color-stop(0.5, transparent), to(transparent));
+			-webkit-background-clip: content;
+		}
+		.x-btn-inner {
+			color: $btn-back-color;
+			overflow: initial;
+			font-size: 80%;
+			padding-left: 6px;
+		}
+	}
+}
+
+
+
+/* 
+ * back button medium 
+ */
+
+ .x-btn-back-medium {
+ 	@extend .x-btn-back-small;
+ 	padding-left: 24px;
+
+ 	.x-btn-wrap {
+		height: 25px;
+		min-width: 30px;
+		padding-left: 5px;
+		margin: 0 8px;
+		font-size: 100%;
+	}
+
+	.x-btn-button-center::before {
+		height: 24px !important;
+		width: 24px !important;
+	}
+ }
+
+.x-btn-forward-medium {
+ 	@extend .x-btn-forward-small;
+	padding-right: 24px;
+
+ 	.x-btn-wrap {
+		height: 25px;
+		min-width: 30px;
+		padding-right: 5px;
+		margin: 0 8px;
+		font-size: 100%;
+	}
+
+	.x-btn-button-center::before {
+		height: 24px !important;
+		width: 24px !important;
+	}
+}
+
+/* 
+ * back button large 
+ */
+
+ .x-btn-back-large {
+ 	@extend .x-btn-back-small;
+ 	padding-left: 24px;
+
+ 	.x-btn-wrap {
+		height: 30px;
+		min-width: 50px;
+		padding-left: 5px;
+		margin: 0 8px;
+		font-size: 120%;
+	}
+
+	.x-btn-button-center::before {
+		height: 29px !important;
+		width: 29px !important;
+	}
+ }
+
+ .x-btn-forward-large {
+ 	@extend .x-btn-forward-small;
+ 	padding-right: 24px;
+
+ 	.x-btn-wrap {
+		height: 30px;
+		min-width: 50px;
+		padding-right: 5px;
+		margin: 0 8px;
+		font-size: 120%;
+	}
+
+	.x-btn-button-center::before {
+		height: 29px !important;
+		width: 29px !important;
+	}
+}

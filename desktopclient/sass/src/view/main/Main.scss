@@ -1,0 +1,196 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('icomoon.eot?-iarb6e');
+	src:url('icomoon.eot?#iefix-iarb6e') format('embedded-opentype'),
+		url('icomoon.ttf?-iarb6e') format('truetype'),
+		url('icomoon.woff?-iarb6e') format('woff'),
+		url('icomoon.svg?-iarb6e#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron-thin-left:before {
+	content: "\e60b";
+}
+
+.icon-cog:before {
+	content: "\e636";
+}
+.icon-cogs:before {
+	content: "\e637";
+}
+
+.icon-lastfm3:before {
+	content: "\e63e";
+}
+.icon-lastfm2:before {
+	content: "\e63f";
+}
+
+.icon-artist:before {
+    content: "\e624";
+}
+.icon-album:before {
+    content: "\e634";
+}
+.icon-recent:before {
+    content: "\e625";
+}
+
+.icon-spotify:before {
+    content: "\e630";
+}
+.icon-youtube:before {
+    content: "\e63d";
+}
+
+@mixin carbon() {
+    background:
+    linear-gradient(324deg, $dark-bg 4%,   transparent 4%) -70px 43px,
+    linear-gradient( 36deg, $dark-bg 4%,   transparent 4%) 30px 43px,
+    linear-gradient( 72deg, $dark-bg2 8.5%, transparent 8.5%) 30px 43px,
+    linear-gradient(288deg, $dark-bg2 8.5%, transparent 8.5%) -70px 43px,
+    linear-gradient(216deg, $dark-bg2 7.5%, transparent 7.5%) -70px 23px,
+    linear-gradient(144deg, $dark-bg2 7.5%, transparent 7.5%) 30px 23px,
+
+    linear-gradient(324deg, $dark-bg 4%,   transparent 4%) -20px 93px,
+    linear-gradient( 36deg, $dark-bg 4%,   transparent 4%) 80px 93px,
+    linear-gradient( 72deg, $dark-bg2 8.5%, transparent 8.5%) 80px 93px,
+    linear-gradient(288deg, $dark-bg2 8.5%, transparent 8.5%) -20px 93px,
+    linear-gradient(216deg, $dark-bg2 7.5%, transparent 7.5%) -20px 73px,
+    linear-gradient(144deg, $dark-bg2 7.5%, transparent 7.5%) 80px 73px;
+    background-color: $dark-bg;
+    background-size: 100px 100px;
+}
+
+.logo:before,
+.icon {
+    font-family: 'Spotifinder';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.logo {
+    font-size: 16px;
+    margin: 10px;
+    line-height: 35px;
+}
+.logo:before {
+    content: '§';
+    margin-right: 5px;
+}
+
+//load mask
+.x-mask {
+    background: #000;
+    opacity: 0.6;
+}
+.x-mask-msg {
+    top: 40%;
+    padding: 20px;
+}
+
+.x-mask-msg-text {
+    color: #fff !important;
+    padding: 40px 0 0 0 !important;
+}
+
+.headerimage {
+    background-size:cover;
+}
+
+.mainmenupanel .x-panel-body-default {
+    background: @include carbon;
+}
+
+.detailpanel {
+
+    .holder {
+        height: 300px;
+        width: 300px;
+
+        overflow: hidden;
+    }
+
+    .holderimage {
+        width: 300px;
+        height: 300px;
+
+        border-radius: 150px;
+        -webkit-border-radius: 150px;
+        -moz-border-radius: 150px;
+
+        overflow: hidden;
+    }
+
+    img {
+        border: 1px solid $dark-bg;
+
+        height: 300px;
+        width: 300px;
+
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+
+        -webkit-transform-origin: 300px center;
+        -moz-transform-origin: 300px center;
+        -ms-transform-origin: 300px center;
+        -o-transform-origin: 300px center;
+        transform-origin: 300px center;
+    }
+
+    .artistimg {
+        width: 300px;
+        height: 300px;
+
+        border-radius: 150px;
+        -webkit-border-radius: 150px;
+        -moz-border-radius: 150px;
+    }
+    img:hover {
+        width: 300px;
+        height: 300px;
+
+        border: 70px solid $dark-bg;
+        border-radius: 50%;
+    }
+
+
+    dt {
+        margin: 10px 0 0;
+        font-size: 12px;
+        line-height: 20px;
+        color:   darken($front-color, 25%);
+    }
+
+    dd {
+        margin: 0;
+        font-size: 16px;
+        color: $front-color2;
+    }
+}

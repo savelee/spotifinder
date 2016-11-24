@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html manifest="">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
+
+    <title>Engine</title>
+
+    
+    <script type="text/javascript">
+        var Ext = Ext || {}; // Ext namespace won't be defined yet...
+
+        // This function is called by the Microloader after it has performed basic
+        // device detection. The results are provided in the "tags" object. You can
+        // use these tags here or even add custom tags. These can be used by platform
+        // filters in your manifest or by platformConfig expressions in your app.
+        //
+        Ext.beforeLoad = function (tags) {
+            var s = location.search,  // the query string (ex "?foo=1&bar")
+                profile;
+
+            // For testing look for "?classic" or "?modern" in the URL to override
+            // device detection default.
+            //
+
+            if (
+                location.href.match(/\bcordova\b/) ||
+                Ext.platformTags.cordova ||
+                Ext.platformTags.webview
+            ) {
+                profile = 'cordovaios';
+            }
+            else if (s.match(/\ios\b/) || tags.ios) {
+                profile = 'ios';
+            }
+            else if (s.match(/\bandroid\b/) || Ext.platformTags.android > 0) {
+                profile = 'android';
+            }
+            else {
+                profile = 'classic';
+            }
+
+            Ext.manifest = profile; // this name must match a build profile name
+
+            // This function is called once the manifest is available but before
+            // any data is pulled from it.
+            //
+            //return function (manifest) {
+                // peek at / modify the manifest object
+            //};
+        };
+    </script>
+    
+    
+    <!-- The line below must be kept intact for Sencha Cmd to build your application -->
+    <script id="microloader" data-app="8e79ca30-dde0-4265-90e0-a097e5726473" type="text/javascript" src="bootstrap.js"></script>
+
+</head>
+<body></body>
+</html>

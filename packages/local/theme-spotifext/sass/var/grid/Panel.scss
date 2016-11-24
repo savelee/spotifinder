@@ -1,0 +1,25 @@
+$grid-header-background-color: $dark-bg ;
+$grid-header-over-background-color: $dark-bg3 ;
+$grid-header-border-color: $dark-bg2;
+$grid-header-border-width: 1px;
+$grid-header-color: $front-color ;
+$grid-header-line-height: 28px;
+$grid-header-padding: 10px;
+
+$grid-row-cell-background-color : $dark-bg ;
+$grid-row-cell-alt-background-color: $dark-bg ;
+$grid-row-cell-border-width: 2px ;
+$grid-row-cell-border-color: lighten($dark-bg2, 10%);
+$grid-row-cell-focus-border-width: 0 ;
+$grid-row-cell-color : $front-color2 ;
+
+$grid-row-cell-over-background-color : darken($dark-bg3, 2%) ;
+$grid-row-cell-over-color : $front-color2 ;
+
+$grid-row-cell-selected-background-color : $dark-bg3 ;
+$grid-row-cell-selected-color : $highlight-color2 ;
+$grid-row-cell-selected-border-width: 0 ;
+
+$grid-row-cell-focus-color : $highlight-color2 ;
+
+$grid-row-cell-line-height: 28px;

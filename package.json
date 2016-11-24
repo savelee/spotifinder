@@ -1,0 +1,39 @@
+{
+    "name": "SpotifinderDesktop",
+    "version": "1.0.0",
+    "description": "Spotifinder running as desktop app",
+    "main": "main.js",
+    "scripts": {
+        "app": "electron desktopclient",
+        
+        "build-dev": "sencha --cwd _engine app build --dev",
+        "build-prod": "sencha --cwd _engine app build --clean --production",
+        
+        "bundle-all":     "sencha --cwd desktopclient app build --clean --production && electron-packager build/production/SpotifinderDesktop SpotifinderDesktop --all --out build/electron",
+        "bundle-win32":   "sencha --cwd desktopclient app build --clean --production && electron-packager build/production/SpotifinderDesktop SpotifinderDesktop --platform=windows --arch=32 --version=1.4.7 --out build/electron",
+        "bundle-win64":   "sencha --cwd desktopclient app build --clean --production && electron-packager build/production/SpotifinderDesktop SpotifinderDesktop --platform=windows --arch=64 --version=1.4.7 --out build/electron",
+        "bundle-osx":     "sencha --cwd desktopclient app build --clean --production && electron-packager build/production/SpotifinderDesktop SpotifinderDesktop --platform=darwin --arch=x64 --version=1.4.7 --out build/electron --overwrite",
+        "bundle-linux32": "sencha --cwd desktopclient app build --clean --production && electron-packager build/production/SpotifinderDesktop SpotifinderDesktop --platform=linux --arch=x86 --version=1.4.7 --out build/electron",
+        "bundle-linux64": "sencha --cwd desktopclient app build --clean --production && electron-packager build/production/SpotifinderDesktop SpotifinderDesktop --platform=linux --arch=x86_64 --version=1.4.7 --out build/electron",
+        
+        "clean": "rm -rf ext; rm -rf .sencha; rm -rf desktopclient/.sencha; rm -rf node_modules; rm -rf desktopclient/node_modules; rm -rf build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:savelee/ext-electron.git"
+    },
+    "keywords": [
+        "extjs",
+        "electron"
+    ],
+    "author": "Lee Boonstra",
+    "bugs": {
+        "url": "https://github.com/savelee/ext-electron/issues"
+    },
+    "homepage": "https://github.com/savelee/ext-electron#readme",
+    "devDependencies": {
+        "electron": "^1.4.4",
+        "electron-packager": "^8.3.0",
+        "graceful-fs": "^4.1.10"
+    }
+}

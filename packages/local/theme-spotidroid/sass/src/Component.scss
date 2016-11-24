@@ -1,0 +1,211 @@
+.toptoolbar .x-inner {
+    padding: 0;
+    margin: 0;
+}
+
+.musictitle.singletitle {
+	display: block;
+    position: relative;
+    top: 4px;
+}
+.musictitle {
+    display: block;
+    position: relative;
+    top: -2px;
+}
+.artist {
+	display: inline-block;
+	color: #9f9ea3;
+	font-size: 12px;
+	margin-top: -2px;
+}
+
+.holder {
+	height: 35px;
+
+	.image {
+		height: 34px;
+		width: 34px;
+		float: left;
+		margin-right: 10px;
+		display: inline-block;
+		background: #ddd;
+		border: 1px solid darken(#ccc, 15%);
+		box-sizing: border-box;
+		overflow: hidden;
+        position: relative;
+        top: -4px;
+	}
+}
+
+.playbutton:before {
+    color: #eee;
+}
+.x-segmentedbutton,
+.x-button {
+  border-bottom: 5px solid transparent;
+  .x-button-label {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.x-toolbar.x-docked-top {
+    height: 56px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26) !important;
+
+    .x-button-label {
+        margin-top: 5px;
+    }
+}
+
+.x-list .x-list-item.x-item-pressed.x-list-item-tpl, .x-list .x-list-item.x-item-pressed .x-dock-horizontal {
+	background: #efefef;
+}
+
+.playbutton {
+	height: 35px;
+	line-height: 25px;
+
+	.icon-spotify {
+		font-size: 19px;
+	}
+}
+
+
+.x-button-pressed {
+    height: 55px;
+    background: transparent;
+    border-bottom: 5px solid #fff;
+}
+
+.x-segmentedbutton .x-button.x-button-pressed {
+    background: $base-color;
+}
+
+.x-button-confirm {
+  background: lighten($base-color, 5%);
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid darken($base-color, 2%);
+  .x-button-label {
+    color: #fff;
+    font-weight: bold;
+    font-size: 110%;
+  }
+  .icon-spotify {
+    display: none;
+  }
+}
+
+.disabled {
+    .x-button-label {
+        color: #eee;
+    }
+}
+
+//---------------------------- edit this piece
+.x-list-item {
+	.image {
+		width: 34px;
+        margin-right: 25px;
+		float: left;
+        border-radius: 34px;
+        padding: 0;
+	}
+
+    .artist,
+    .musictitle {
+		display: block;
+	}
+}
+.x-list-item.x-item-selected .x-innerhtml{
+    -webkit-transition: background-color 800ms linear;
+   -moz-transition: background-color 800ms linear;
+   -o-transition: background-color 800ms linear;
+    background: lighten($base-color, 5%);
+    color: #fff;
+
+    .musictitle, .artist, .singletitle {
+        color: #fff;
+    }
+}
+
+.androidsettingsbtn {
+    height: 80px;
+    margin-top: -30px;
+    background: $base-color;
+
+    .x-button-icon {
+        margin-top: 30px;
+        color: #fff;
+        font-size: 30px;
+    }
+}
+ 
+
+//---------------------------- edit this piece
+
+
+
+
+/*
+
+
+
+
+.x-button.x-button-confirm.disabled{
+	background: desaturate($base-color, 50%);
+	border-color: desaturate($base-color, 55%);
+    opacity: 0.4;
+}
+
+.x-list-header {
+  .x-innerhtml {
+    color: $base-color;
+  }
+}
+
+
+
+
+
+
+
+
+.x-form-fieldset .x-field {
+    margin: 0 15px;
+}
+
+.settingsinfo,
+.x-form-fieldset {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26) !important;
+
+    padding: 30px;
+    margin-bottom: 10px;
+
+    .x-inner {
+        background: none !important;
+    }
+
+    .x-form-fieldset-title {
+        color: $base-color;
+    }
+
+    .x-field {
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .x-empty .x-input {
+        border-bottom-color: red;
+    }
+}
+
+.x-msgbox-inner {
+  background: #fff;
+}
+*/

@@ -1,0 +1,317 @@
+@font-face {
+    font-family: 'sfns_displayultralight';
+    src: url('sanfran/system_san_francisco_display_ultralight-webfont.eot');
+    src: url('sanfran/system_san_francisco_display_ultralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sanfran/system_san_francisco_display_ultralight-webfont.woff2') format('woff2'),
+         url('sanfran/system_san_francisco_display_ultralight-webfont.woff') format('woff'),
+         url('sanfran/system_san_francisco_display_ultralight-webfont.ttf') format('truetype'),
+         url('sanfran/system_san_francisco_display_ultralight-webfont.svg#sfns_displayultralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sfns_displaythin';
+    src: url('sanfran/system_san_francisco_display_thin-webfont.eot');
+    src: url('sanfran/system_san_francisco_display_thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sanfran/system_san_francisco_display_thin-webfont.woff2') format('woff2'),
+         url('sanfran/system_san_francisco_display_thin-webfont.woff') format('woff'),
+         url('sanfran/system_san_francisco_display_thin-webfont.ttf') format('truetype'),
+         url('sanfran/system_san_francisco_display_thin-webfont.svg#sfns_displaythin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sfns_displayregular';
+    src: url('sanfran/system_san_francisco_display_regular-webfont.eot');
+    src: url('sanfran/system_san_francisco_display_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sanfran/system_san_francisco_display_regular-webfont.woff2') format('woff2'),
+         url('sanfran/system_san_francisco_display_regular-webfont.woff') format('woff'),
+         url('sanfran/system_san_francisco_display_regular-webfont.ttf') format('truetype'),
+         url('sanfran/system_san_francisco_display_regular-webfont.svg#sfns_displayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sfns_displaybold';
+    src: url('sanfran/system_san_francisco_display_bold-webfont.eot');
+    src: url('sanfran/system_san_francisco_display_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sanfran/system_san_francisco_display_bold-webfont.woff') format('woff'),
+         url('sanfran/system_san_francisco_display_bold-webfont.ttf') format('truetype'),
+         url('sanfran/system_san_francisco_display_bold-webfont.svg#sfns_displaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, .x-body, .x-form-inner {
+    background: $background;
+	font-family: 'sfns_displayregular', Helvetica, Arial;
+}
+
+.x-toolbar .x-body {
+    background: #fff;
+}
+.x-toolbar-inner {
+    border-bottom: 1px solid $borderColor;
+    border-bottom-width: 1px !important;
+}
+.x-big .x-toolbar {
+    background: #fff;
+}
+
+.x-button.x-button-confirm {
+	display: block;
+	background: $base-color;
+	border-color: $base-color;
+    padding: 5px;
+
+	.x-button-label {
+		color: #fff;
+		padding: 2px;
+	}
+}
+
+.x-msgbox {
+	.x-button {
+		display: block;
+
+		.x-button-label {
+			margin-top: 10px;
+		}
+	}
+}
+
+.x-toolbar .x-segmentedbutton .x-button {
+	height: 32px;
+	position: static;
+	font-size: 12px;
+    border: 1px solid;
+    border-left: 0;
+
+	.x-button-label {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.x-toolbar .x-segmentedbutton .x-button.x-button-pressed, .x-segmentedbutton .x-button.x-button-pressed{
+	background-color: $base-color;
+    border: 1px solid $base-color;
+}
+
+.x-toolbar .x-segmentedbutton .x-first, .x-segmentedbutton .x-first {
+	-moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid $base-color;
+}
+
+
+.x-toolbar {
+	.x-html {
+		padding: 0.5em;
+	}
+}
+
+.x-toolbar .x-segmentedbutton .x-last, .x-segmentedbutton .x-last {
+	-moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.x-picker {
+    .x-picker-center {
+    	background-color: #d1d5db;
+    }
+    .x-picker-bar {
+    	border-bottom-color: #bcc0c5;
+    	border-top-color: #bcc0c5;
+    	height: 50px;
+    }
+    .x-picker-slot .x-picker-item {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 22px;
+        font-family: 'Helvetica Neue', Helvetica, Arial;
+        font-weight: normal;
+        height: 50px;
+        line-height: 50px;
+        color: $valueTextColor
+    }
+
+    .x-picker-slot .x-item-selected .x-picker-item {
+        color: #000;
+        border-top: 1px solid $borderColor;
+        border-bottom: 1px solid $borderColor;
+    }
+
+    .x-toolbar {
+        border: none;
+        background: #fff;
+
+        .x-button-label {
+            color: $valueTextColor;
+        }
+
+        .x-button-action .x-button-label {
+            font-weight: bold;
+            color: $fieldTextColor;
+        }
+    }
+}
+
+.musictitle {
+	display: block;
+}
+.artist {
+	display: block;
+	color: #9f9ea3;
+	font-size: 12px;
+}
+
+.x-list .x-list-item.x-item-selected.x-list-item-tpl,
+.x-list .x-item-pressed
+{
+	background: darken(#f2f2f2, 2%);
+}
+
+.holder {
+	height: 35px;
+	overflow: hidden;
+
+	.image {
+		height: 34px;
+		width: 34px;
+		float: left;
+		margin-right: 10px;
+		display: inline-block;
+		background: #ccc;
+		border: 1px solid darken(#ccc, 10%);
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+}
+
+.playbutton {
+	height: 35px;
+	line-height: 25px;
+
+	.x-button-label {
+		text-transform: uppercase;
+		font-family: 'sfns_displaybold';
+	}
+}
+.x-button.x-button-confirm.disabled{
+	background: desaturate($base-color, 50%);
+	border-color: desaturate($base-color, 55%);
+    opacity: 0.4;
+}
+
+.x-button-confirm.x-button-pressing, .x-button-confirm.x-button-pressed {
+    background: lighten($base-color, 10%);
+	border-color: lighten($base-color, 15%);
+}
+
+.x-button .x-button-icon {
+    color: $base-color;
+}
+
+.x-indexbar-vertical {
+	margin-right: 2px;
+}
+
+.x-img.x-img-background {
+    background-color: #000;
+}
+
+.singletitle {
+    margin-top: 10px;
+	font-family: 'sfns_displaybold';
+}
+
+
+.x-form .x-panel-inner {
+    background: #edebf1;
+    margin: 0;
+
+    .x-form-fieldset {
+        margin: 0 !important;
+    }
+
+}
+
+.x-form-fieldset .x-field {
+    border: none;
+    border-bottom: 1px solid #dcdcdc;
+    margin-bottom: 0 !important;
+}
+
+.x-form-fieldset-title .x-innerhtml {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.x-form-fieldset .x-form-fieldset-inner {
+    border: none;
+    padding: 0 10px;
+}
+
+.x-form-fieldset {
+    margin: 0;
+    .x-inner {
+        border-radius: 0;
+        border-top: 1px solid $borderColor;
+        border-bottom: 1px solid $borderColor;
+    }
+
+    .x-form-fieldset-title {
+        text-transform: uppercase;
+    }
+}
+
+.x-form .x-field .x-field-input,
+.x-form .x-field .x-input-el{
+    text-align: right;
+    color: $valueTextColor;
+}
+.x-textfield .x-input {
+    border: none;
+}
+.x-pickerfield .x-input-el{
+    padding-right: 1.8em !important;
+}
+
+.x-form-label {
+    width: 40% !important;
+
+    span {
+        font-weight: normal;
+    }
+}
+
+.settingsinfo {
+    font-family: 'sfns_displayregular';
+    font-size: 0.8em;
+}
+
+.x-loading-spinner * {
+    background-color: darken(#f2f2f2, 2%) !important;
+
+    &::before,
+    &::after {
+        background-color: #fff !important;
+    }
+}
+.x-mask .x-mask-message {
+    color: #fff !important;
+}

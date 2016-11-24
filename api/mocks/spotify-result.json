@@ -1,0 +1,39 @@
+{
+    "artists": {
+        "href": "https://api.spotify.com/v1/search?query=Guans&offset=0&limit=20&type=artist",
+        "items": [{
+            "external_urls": {
+                "spotify": "https://open.spotify.com/artist/5LzsrWUWxUUdzlq9zlrafY"
+            },
+            "followers": {
+                "href": null,
+                "total": 8
+            },
+            "genres": [],
+            "href": "https://api.spotify.com/v1/artists/5LzsrWUWxUUdzlq9zlrafY",
+            "id": "5LzsrWUWxUUdzlq9zlrafY",
+            "images": [{
+                "height": 640,
+                "url": "https://i.scdn.co/image/4e00a72a400be49931117a8fdc825ee83335023d",
+                "width": 640
+            }, {
+                "height": 300,
+                "url": "https://i.scdn.co/image/858c61fc4584f2ebf3d96048a6679e8be6fa3d28",
+                "width": 300
+            }, {
+                "height": 64,
+                "url": "https://i.scdn.co/image/8756dbd6a38b576d3f5c14541e1e11c9727fa4cf",
+                "width": 64
+            }],
+            "name": "Mad-T-Guans",
+            "popularity": 0,
+            "type": "artist",
+            "uri": "spotify:artist:5LzsrWUWxUUdzlq9zlrafY"
+        }],
+        "limit": 20,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "total": 1
+    }
+}

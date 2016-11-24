@@ -1,0 +1,67 @@
+{
+    "artists": {
+        "href": "https://api.spotify.com/v1/search?query=Open+your+eyes&offset=0&limit=20&type=artist",
+        "items": [{
+            "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6jPq8HNMpjpZgtn3Gn9zYO"
+            },
+            "followers": {
+                "href": null,
+                "total": 252
+            },
+            "genres": [],
+            "href": "https://api.spotify.com/v1/artists/6jPq8HNMpjpZgtn3Gn9zYO",
+            "id": "6jPq8HNMpjpZgtn3Gn9zYO",
+            "images": [{
+                "height": 640,
+                "url": "https://i.scdn.co/image/1e01006d7caefaf858cd31f7d30389f437954ba4",
+                "width": 640
+            }, {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ccd959af823f1f3b301f529c865021490affd097",
+                "width": 300
+            }, {
+                "height": 64,
+                "url": "https://i.scdn.co/image/947d37c272f6611be6024a1e8bdc3e96657d075c",
+                "width": 64
+            }],
+            "name": "Open Your Eyes",
+            "popularity": 13,
+            "type": "artist",
+            "uri": "spotify:artist:6jPq8HNMpjpZgtn3Gn9zYO"
+        }, {
+            "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6xmaISdMNkftO1PvupFDFw"
+            },
+            "followers": {
+                "href": null,
+                "total": 16
+            },
+            "genres": [],
+            "href": "https://api.spotify.com/v1/artists/6xmaISdMNkftO1PvupFDFw",
+            "id": "6xmaISdMNkftO1PvupFDFw",
+            "images": [{
+                "height": 640,
+                "url": "https://i.scdn.co/image/78d1a92c98a3f93ad9e3959d34739194fcc0ec8a",
+                "width": 640
+            }, {
+                "height": 300,
+                "url": "https://i.scdn.co/image/fe9ed379ff05907cc0b81f4729a1dc524545fb03",
+                "width": 300
+            }, {
+                "height": 64,
+                "url": "https://i.scdn.co/image/b1670c96fd034344253b8c692730ac888174c456",
+                "width": 64
+            }],
+            "name": "Open Your Eyes Small Bear",
+            "popularity": 1,
+            "type": "artist",
+            "uri": "spotify:artist:6xmaISdMNkftO1PvupFDFw"
+        }],
+        "limit": 20,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "total": 2
+    }
+}

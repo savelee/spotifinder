@@ -1,0 +1,26 @@
+.x-nestedlist {
+	.x-panel-body-default {
+		background: $background-color;
+	}
+
+	.item {
+		background: $background-color;
+		border-bottom: 1px solid $border-color;
+		font-weight: bold;
+		min-height: 42px;
+		padding: 12px 15px;
+	}
+	.item:first-child {
+		border-top: 1px solid $border-color;
+	}
+
+	.x-btn {
+		margin-left: -8px;
+		margin-right: 8px;
+
+		.x-btn-wrap {
+			padding-left: 2px;
+			min-width: 32px;
+		}
+	}
+}
