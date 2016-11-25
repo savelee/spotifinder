@@ -83,5 +83,12 @@ Ext.define('Engine.view.main.MainControllerClassic', {
         if(window.process){
             this.getView().reloadNativeMenu('app');  
         }
+    },
+
+    onQuit: function(){
+        alert("TODO");
+    },
+    onHelp: function(){
+        alert("TODO");
     }
 });

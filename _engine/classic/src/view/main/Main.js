@@ -16,10 +16,6 @@ Ext.define('Engine.view.main.Main', {
         'Ext.plugin.Viewport'
     ],
 
-    mixins: [
-        'Ext.electron.menu.Manager'
-    ],
-
     controller: 'main',
     viewModel: 'main',
     layout: 'border',
@@ -81,28 +77,5 @@ Ext.define('Engine.view.main.Main', {
         afterrender: function(){
             this.lookupReference('banner').setText('<span class="logo">'+Engine.utils.Constants.APP_TITLE+'</span>');
         }
-    },
-    
-    nativeMenus: {
-        app: [{
-            label: 'File',
-            submenu: [
-            {
-                label: 'About',
-                click: 'onAbout'
-            },
-            {
-                label: 'Quit',
-                accelerator: 'CmdOrCtrl+Q',
-                click: 'onQuit'
-            }]
-        },{
-            label: 'Help',
-            submenu: [{
-                label: 'Help',
-                accelerator: 'CmdOrCtrl+H',
-                click: 'onHelp'
-            }]
-        }]
     }
 });

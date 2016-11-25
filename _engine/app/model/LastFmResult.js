@@ -81,6 +81,7 @@ Ext.define('Engine.model.LastFmResult', {
         period: Engine.utils.Constants.PERIOD,
         userName: 'savelee',
         secure: p,
+        // @sw-cache
         url: Ext.manifest.constants.lastfm.url
     });
     //<debug>

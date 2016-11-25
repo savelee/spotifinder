@@ -60,7 +60,7 @@
       </fileset>
     </copy>
 
-    <!-- I will thrash what we don't need!-->
+    <!-- I will thrash what we don't need!
     <delete dir="${build.dir}/modern/resources/ext"/>
     <delete dir="${build.dir}/modern/resources/ext-watermark"/>
     <delete dir="${build.dir}/modern/resources/images"/>
@@ -87,6 +87,7 @@
     <delete dir="${build.dir}/android/resources/font-pictos"/>
     <delete dir="${build.dir}/android/resources/font-awesome"/>
     <delete dir="${build.dir}/android/resources/font-ext"/>
+    -->
 
     <copy todir="${build.dir}" overwrite="true">
       <fileset dir="${basedir}">
