@@ -1,0 +1,27 @@
+.settingsinfo {
+	color: #919191;
+	font-size: '0.9em';
+	padding: 20px;
+
+	h1 {
+		font-weight: bold;
+		font-size: 1em;
+	}
+
+	p {
+		margin: 10px 0;
+	}
+}
+
+.x-button-confirm {
+	margin: 20px 5px;
+}
+
+.back:before {
+	content: "!";
+	font-family: 'Spotifinder';
+}
+
+.invalid-field {
+	border-color: red !important;
+}

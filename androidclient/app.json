@@ -21,7 +21,9 @@
      * application resides (the same folder in which this file is located).
      */
     "classpath": [
-        "app"
+        "app",
+        "../_engine/app",
+        "../_engine/modern"  
     ],
 
     /**
@@ -52,7 +54,7 @@
      * The name of the theme for this application.
      */
     
-    "theme": "theme-triton",
+    "theme": "theme-spotidroid",
     
     
     /**
@@ -65,7 +67,9 @@
      *      ]
      */
     "requires": [
-        "font-awesome"
+        "font-awesome",
+        "theme-spotidroid",
+        "senchacandy-lib"
     ],
 
     /**
@@ -92,7 +96,7 @@
          * root namespace, change this to "". Doing so would change the mapping of
          * "SpotifinderAndroid.view.Foo" to "sass/src/SpotifinderAndroid/view/Foo.scss".
          */
-        "namespace": "SpotifinderAndroid",
+        "namespace": "Engine",
 
         /**
          * Generated sass source settings
@@ -312,13 +316,41 @@
         },
         "compressor": {
             "type": "yui"
+        },
+                "constants": {
+            "mock": false,
+            "electron": true,
+            "spotify": {
+                "url": "https://www.leeboonstra.com/spotifinder/api/spotify-search.php",
+                "return_url": false,
+                "key": false
+            },
+            "lastfm": {
+                "key": "14662b3ba219b6332f9620776067a8e5",
+                "secret": "8497bb571da596b0a80a0f62ef836704",
+                "url": "https://www.leeboonstra.com/spotifinder/api/lastfm-data.php"
+            }       
         }
     },
     
-    /**
+     /**
      * Settings specific to testing builds.
      */
     "testing": {
+        "constants": {
+            "mock": false,
+            "electron": false,
+            "spotify": {
+                "url": "https://www.leeboonstra.com/spotifinder/api/spotify-search.php",
+                "return_url": false,
+                "key": false
+            },
+            "lastfm": {
+                "key": "14662b3ba219b6332f9620776067a8e5",
+                "secret": "8497bb571da596b0a80a0f62ef836704",
+                "url": "https://www.leeboonstra.com/spotifinder/api/lastfm-data.php"
+            }      
+        }
     },
     
     /**
@@ -327,6 +359,21 @@
     "development": {
         "watch": {
             "delay": 250
+        },
+
+        "constants": {
+            "mock": false,
+            "electron": false,
+            "spotify": {
+                "url": "../api/spotify-search.php",
+                "return_url": false,
+                "key": false
+            },
+            "lastfm": {
+                "key": "14662b3ba219b6332f9620776067a8e5",
+                "secret": "8497bb571da596b0a80a0f62ef836704",
+                "url": "../api/lastfm-data.php"
+            }       
         }
     },
 
@@ -495,7 +542,21 @@
      * names.
      *
      */
-    
+    "builds": {
+        "native": {
+            "packager": "cordova",
+            "cordova": {
+                "config": {
+                    "platforms": "android",
+                    "remote": false,
+                    "id": "com.sencha.SpotifinderAndroid",
+                    "name": "SpotifinderAndroid"
+                }
+            },
+            "toolkit": "modern",
+            "theme": "theme-spotidroid"
+        } 
+    },
     
     /**
      * File / directory name patttern to ignore when copying to the builds. Must be a
