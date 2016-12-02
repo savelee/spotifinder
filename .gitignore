@@ -14,7 +14,6 @@
 
 /.idea
 /build
-.sencha
 node_modules
 bootstrap.*
 config.rb
