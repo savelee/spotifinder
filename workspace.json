@@ -6,9 +6,7 @@
         "_engine",
         "desktopclient",
         "iosclient",
-        "androidclient",
-        "test",
-        "test2"
+        "androidclient"
     ],
 
     /**
